@@ -1,0 +1,134 @@
+.card {
+    display: flex;
+    align-items: center;
+    width: 450px; /* Ajuste a largura conforme necessário */
+    height: auto;
+    border: 2px solid #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    margin: 10px;
+    text-align: left; /* Alinhar o texto à esquerda */
+    background-color: black;
+    box-shadow: 20px 10px 4px rgba(0,0,0, 0.3);
+    font-family: 'Kode Mono', sans-serif;
+}
+
+.card img {
+    width: 210px;
+    height: auto;
+    padding: 30px;/* Adiciona uma borda separadora */
+}
+
+.card img:hover {
+    animation: zoomAnimation ease-in-out 2s;
+}
+
+.card h3 {
+    color: red;
+    font-size: 15px;
+}
+
+.card p {
+    padding: 15px;
+}
+
+
+.atkRed {
+    font-size: 20px;
+    color: red;
+}
+
+.defBlue {
+    font-size: 20px;
+    color: blue;
+}
+
+.level {
+    font-size: 20px;
+    font-weight: bold;
+    color: yellow;
+}
+
+.cardContent {
+    padding: 10px; /* Espaçamento ao redor do conteúdo do texto */
+}
+
+.boxStatus {
+    margin-bottom: 10px;
+    padding: 15px;
+    border: 1px solid #fff;
+    background-color: rgb(18, 17, 17);
+}
+
+
+.atkRed::before {
+    content: url("../cardArea/assets/crossed-swords.svg");
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin: 5px;
+}
+
+
+.defBlue::before {
+    content: url("../cardArea/assets/shield.svg");
+    display: inline-block;
+    width: 20px; 
+    height: 20px; 
+    margin-right: 5px;
+    vertical-align: middle;
+}
+
+.level::before {
+    content: url("../cardArea/assets/level.png");
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+    vertical-align: middle;
+}
+
+.addButton {
+    position: absolute;
+    margin-left: 5px;
+    font-size: 15px;
+    padding: 0.5em 1rem;
+    cursor: pointer;
+    margin: 0 5px;
+    background-color: #222;
+    border: 1px solid #333;
+    color: #fff;
+    border-radius: 15px;
+}
+
+.addButton:hover {
+    background: #444;
+}
+
+
+@keyframes zoomAnimation {
+    
+    0% {
+        transform: scale(1.0);
+    }
+
+    50% {
+        transform: scale(1.2);
+    }
+
+    100% {
+        transform: scale(1.2);
+    }
+}
+
+
+@media (max-width: 480px) {
+
+    .addButton { 
+        width: 70px;
+        height: 25px;
+        font-size: 9px;
+        padding: 5px;
+    }
+    
+}

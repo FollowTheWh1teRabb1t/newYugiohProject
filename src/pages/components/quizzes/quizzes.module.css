@@ -1,0 +1,180 @@
+.mainTag {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+    color: #fff;
+    min-height: 70vh;
+    background-image: url('/assets/thumb-1920-1310341.jpg');
+    background-size: contain;
+    background-position: center;
+    -webkit-font-smoothing: antialiased;
+}
+
+.boxTitle {
+    width: 800px;
+    border: 1px solid red;
+    background-color: rgb(135, 11, 11);
+    border-radius: 20px;
+    padding: 10px;
+    margin-top: 5px;
+    margin-left: 350px;
+    text-align: center;
+    box-shadow: 5px 20px 15px rgba(0, 0, 0, 1.5);
+    
+}
+
+
+.boxScore {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+    font-size: 17px;
+    position: relative;
+    top: 20%;
+    left: 90%;
+    background-color:#444;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.boxScore p::before {
+    content: '';
+    display: inline-block; 
+    width: 30px;
+    height: 30px;
+    position: relative; 
+    background-image: url('../../../../public/assets/gold-coin.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    top: 5px; 
+    left: -5px; 
+}
+
+
+
+.boxTitle h1 {
+    font-size: 30px;
+}
+
+.question {
+    margin-bottom: 20px;
+    padding: 50px;
+    font-size: 20px;
+}
+
+.question p {
+    font-weight: bold;
+}
+
+.question ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.question ul li {
+    background: #444;
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: 1px solid #ccc;
+}
+
+.question li:hover {
+    background-color: #f0f0f0;
+    color: #000000;
+    -webkit-font-smoothing: antialiased;
+}
+
+
+.feedBack {
+    width: 300px;
+    margin-top: 40px;
+    margin-left: 500px;
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    background-color: #000000;
+
+}
+
+@media (max-width: 1024px) {
+    .boxTitle {
+        width: 500px;
+        position: relative;
+        margin-bottom: 20px;
+        right: 10%;
+    }
+
+    .boxScore {
+        position: relative;
+        left: 42%;
+    }
+
+    .question {
+        padding: 30px;
+        font-size: 18px;
+    }
+
+    .feedBack {
+        margin-top: 20px;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 8px;
+        width: 80%;
+    }
+}
+
+@media (max-width: 768px) {
+    .boxTitle {
+        width: 90%;
+        margin-left: 120px;
+        margin-right: auto;
+    }
+
+    .boxScore {
+        width: 130px;
+        font-size: 15px;
+        padding: 15px;
+    }
+
+    .question {
+        padding: 20px;
+        font-size: 16px;
+    }
+
+    .feedBack {
+        width: 90%;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .boxTitle {
+        margin-left: 50px;
+    }
+    .boxTitle h1 {
+        font-size: 24px;
+
+    }
+
+    .boxScore {
+        font-size: 14px;
+    }
+
+    .question {
+        padding: 15px;
+        font-size: 14px;
+    }
+
+    .feedBack {
+        width: 95%;
+        font-size: 12px;
+    }
+}
+
+

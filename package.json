@@ -1,0 +1,21 @@
+{
+  "name": "meu_projeto",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "axios": "^1.7.2",
+    "cors": "^2.8.5",
+    "express": "^4.19.2",
+    "next": "14.2.3",
+    "react": "^18",
+    "react-dom": "^18",
+    "react-router-dom": "^6.25.1"
+  },
+  "proxy": "http://localhost:5000"
+}

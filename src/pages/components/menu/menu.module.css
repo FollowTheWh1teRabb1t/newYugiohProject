@@ -1,0 +1,58 @@
+/* menu.module.css */
+
+.menu {
+    display: flex;
+    flex-wrap: wrap; /* Permite que os itens se movam para a próxima linha se não houver espaço suficiente */
+    justify-content: center;
+    background-color: #111;
+    padding: 15px;
+}
+
+.menu button {
+    font-size: 16px; /* Tamanho da fonte reduzido para telas menores */
+    padding: 0.5em 1em;
+    cursor: pointer;
+    margin: 0.5em; /* Espaçamento entre os botões */
+    background-color: #222;
+    border: 1px solid #333;
+    color: #fff;
+    border-radius: 15px;
+}
+
+.menu button:hover {
+    background-color: #444;
+}
+
+.searchInput {
+    border-radius: 15px;
+    padding: 15px;
+    font-size: 16px; /* Ajuste do tamanho da fonte para corresponder aos botões */
+    margin-top: 10px; /* Espaçamento superior para separar do menu */
+    width: 100%; /* Ajuste a largura para ocupar toda a largura disponível */
+    max-width: 400px; /* Define uma largura máxima para o campo de busca */
+}
+
+.allCards::before,
+.monsters::before,
+.magic::before {
+    content: url("./assets/favicon.ico");
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+    vertical-align: middle;
+}
+
+/* Media query para telas menores */
+@media (max-width: 768px) {
+    .menu button {
+        font-size: 14px; /* Reduz o tamanho da fonte em telas menores */
+        padding: 0.4em 0.8em; /* Ajusta o padding para economizar espaço */
+    }
+
+    .searchInput {
+        padding: 12px;
+        font-size: 14px; /* Reduz o tamanho da fonte no campo de busca */
+        width: calc(100% - 30px); /* Ajusta a largura para incluir o padding */
+    }
+}

@@ -1,0 +1,64 @@
+.cardArea {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+    background: linear-gradient(90deg, rgb(1, 0, 10) 0%, rgb(29, 0, 59) 35%);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+  }       
+  
+  .pagination {
+    margin-top: 20px;
+  }
+  
+  .pagination button {
+    height: 50px;
+    padding: 10px 20px;
+    margin: 5px;
+    color: white;
+    background-color: #111111;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .pagination button:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+  }
+
+  .loading {
+    text-align: center;
+    font-size: 30px;
+    position: absolute;
+    top: 42%;
+  }
+
+
+.nextButton {
+  width: 100px;
+}
+
+.previewButton {
+  width: 100px;
+}
+
+.pagination button:hover {
+  background-color: #444;
+}
+
+.searchInput {
+  display: block;
+  margin: 10px 0;
+  padding: 10px;
+  width: 100%;
+  max-width: 300px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+  
+ 
