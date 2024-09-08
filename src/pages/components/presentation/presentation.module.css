@@ -2,7 +2,7 @@
 
 .presentationSection {
     height: 150vh; /* Ajusta a altura automaticamente */
-    background-image: url("../../../../public//assets/yugibackground.jpg");
+    background-image: url("/assets/yugibackground.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
@@ -23,19 +23,19 @@
 }
 
 .boxSlifer {
-    background-image: url("../../../../public/assets/Slifer.jpg");
+    background-image: url("/assets/Slifer.jpg");
     top: 10%;
     right: 82%;
 }
 
 .boxWinged {
-    background-image: url("../../../../public/assets/Winged.jpg");
+    background-image: url("/assets/Winged.jpg");
     top: 10%;
     left: 82%;
 }
 
 .boxObelisk {
-    background-image: url("../../../../public/assets/Obelisk.jpg");
+    background-image: url("/assets/Obelisk.jpg");
     top: 60%;
     left: 42%;
 }
